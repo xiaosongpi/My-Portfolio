@@ -1,11 +1,11 @@
-import styles from './App.module.css';
+import Navbar from './components/navbar/Navbar'
+import styles from './App.module.css'
 
 function App() {	
 	return (
 		<>
-			<div className={styles.main}>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid porro corporis nesciunt sint odio fuga iste hic quia id laborum consectetur tenetur mollitia, delectus repudiandae odit doloremque sunt. Aspernatur, neque?</p>
-			</div>
+			<Navbar />
+			{/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam earum minima eum exercitationem temporibus, voluptas ducimus? Fuga nobis laborum necessitatibus officiis quae autem natus sunt. Voluptas voluptate ipsum cupiditate vel?</p> */}
 		</>
 	)
 }
