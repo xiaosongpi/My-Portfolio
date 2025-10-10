@@ -15,7 +15,9 @@ function Hero () {
                 </div>
                 <div className={`${styles['box-small']} ${styles['box-bottom']}`}>
                     <p className={styles['text-big']}>Hendry</p>
-                    <p className={`${styles['text-medium']} ${styles['text-outline']}`}>Backend Developer</p>
+                    <div className={styles.wrap_typer}>
+                        <p className={`${styles['text-medium']} ${styles['text-outline']} ${styles['text-typer']}`}>Backend Developer</p>
+                    </div>
                 </div>
             </div>
             <div className={styles['box-right']}>   
@@ -31,28 +33,28 @@ function Hero () {
                 <div className={`${styles['box-small']} ${styles['box-bottom']}`}>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <div className={styles.contact}>
-                                <p className={`${styles['text-small']} ${styles['text-right']}`}>Phone Number</p>
+                            <button className={`${styles['btn-square']} ${styles.contact}`}>
+                                <p className={`${styles['text-small']} ${styles['text-right']}`}>Phone No.</p>
                                 <div className={styles.square}>
-                                    <img src={Phone} alt="" />
+                                    <img className={styles.icon} src={Phone} alt="" />
                                 </div>
-                            </div>
+                            </button>
                         </li>
                         <li className={styles.item}>
-                            <div className={styles.contact}>
+                            <button className={`${styles['btn-square']} ${styles.contact}`}>
                                 <p className={`${styles['text-small']} ${styles['text-right']}`}>Email</p>
                                 <div className={styles.square}>
-                                    <img src={Email} alt="" />
+                                    <img className={styles.icon} src={Email} alt="" />
                                 </div>
-                            </div>
+                            </button>
                         </li>
                         <li className={styles.item}>
-                            <div className={styles.contact}>
+                            <button className={`${styles['btn-square']} ${styles.contact}`}>
                                 <p className={`${styles['text-small']} ${styles['text-right']}`}>LInkedIn</p>
                                 <div className={styles.square}>
-                                    <img src={Linkedin} alt="" />
+                                    <img className={styles.icon} src={Linkedin} alt="" />
                                 </div>
-                            </div>
+                            </button>
                         </li>
                     </ul>
                 </div>
