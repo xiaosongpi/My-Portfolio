@@ -1,60 +1,50 @@
 .nav {
-    height: 55px;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0 20px;
+    height: 70px;
+    max-height: 70px;
+    display: flex;
     align-items: center;
-    border-bottom: 1px solid #777777;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
-.nav__brand {
-    font-size: 1.5rem;
-    pointer-events: none;
+.title {
+    font-size: 30px;
+    text-transform: capitalize;
 }
 
-.menu__list {
+.list {
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    gap: 54px;
+    align-items: center;
+    gap: 30px;
 }
 
-.menu__list li a {
-    color: inherit;
-    text-decoration: inherit;
-    transition: 0.3s ease-in-out ;
-}
-
-.menu__list li a:hover {
-    text-shadow: 0 0 10px #ffffff;
-}
-
-.nav__action {
-    display: flex;
-    justify-content: end;
+.item {
+    text-transform: capitalize;
+    cursor: pointer;
 }
 
 .user {
-    padding: 3px 3px;
-    width: auto;
-    border: 1px solid transparent;
-    border-radius: 40px;
     display: flex;
     align-items: center;
-    transition: 0.3s ease-in-out;
+    gap: 20px
 }
 
-.user:hover {
-    border: 1px solid #ffffff;
-}
-
-.user__name {
-    padding: 0 15px;
-}
-
-.user__status {
+.circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+
+    .circle {
+        background-color: #000000;
+    }
 }
