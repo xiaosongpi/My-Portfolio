@@ -1,0 +1,70 @@
+.player {
+    padding: 50px 0 40px 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.box-big {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #242424 , #333333 70%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player_wrapper {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.progress_line {
+    height: 3px;
+    width: 100%;
+    background-color: #ff9500;
+}
+
+.option_group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff9500;
+}
+
+.box {
+    width: 100px;
+    height: 40px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 20px;
+}
+
+.text-small {
+    font-size: 1.2rem;
+}
+
+.text-big {
+    line-height: 100px;
+    font-weight: 600;
+    font-size: 6rem;
+}
+
+.text-medium {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 2000px) {
+    .section {
+        height: 900px;
+    }
+}

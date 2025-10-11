@@ -164,8 +164,8 @@
     }
 }
 
-@media screen and (min-width: 1800px) {
-    .hero {
+@media screen and (min-width: 2000px) {
+    .section {
         height: 900px;
     }
 }

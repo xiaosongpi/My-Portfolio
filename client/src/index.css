@@ -31,3 +31,9 @@ body {
 		background-color: #ffffff;
 	}
 }
+
+@media screen and (min-width: 2000px) {
+    .section {
+        height: 900px;
+    }
+}

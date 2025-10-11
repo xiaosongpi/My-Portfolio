@@ -7,7 +7,7 @@ import Human from '../../assets/human.svg';
 
 function Hero () {
     return (
-        <div className={styles.hero}>
+        <div className={`${styles.hero} ${styles.section}`}>
             <div className={styles['box-left']}>
                 <div className={`${styles['box-small']} ${styles['box-float']}`}>
                     <p className={styles['text-big']}>5+</p>
